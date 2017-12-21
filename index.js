@@ -26,6 +26,7 @@ require('./routes/authRoutes')(app);
 
 app.get('/', (req, res) => {
     res.send({ hi: 'there' });
+    // res.sendFile(__dirname + '/client/build/index.html');
 });
 
 const PORT = process.env.PORT || 5000;
